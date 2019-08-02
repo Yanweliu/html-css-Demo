@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>360仿页</title>
+		<link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+		<script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+		<style>
+			body {
+				/*display: block;*/
+				padding: 0;
+				margin: 0;
+				font-size: 18px;
+				font-family: "楷体";
+				background-image:url(img/v2-6d31206fcdbb82d8bdcf9ae4f03e37fc_hd.jpg) ;
+			}
+			
+			.top_line {
+				width: 100%;
+				/*margin: 0 auto;*/
+				height: 60px;
+				padding-top: 10px;
+				/*float: right;*/
+				text-align: right;
+				font-family: "楷体";
+				line-height: 20px;
+				font-size: 18px;
+			}
+			
+			.out_search {
+				width: 600px;
+				margin: 0 auto;
+			}
+			
+			.big-search {
+				display: flex;
+				/*flex-wrap:wrap;*/
+				/*line-height: 30px;*/
+				/*vertical-align: middle;*/
+				clear: both;
+				text-align: center;
+				line-height: 36px;
+			}
+			
+			.search_input {
+				width: 550px;
+			}
+			
+			.search_submit {
+				background: darkseagreen;
+				color: white;
+				font-family: "楷体";
+			}
+			
+			a {
+				text-decoration: none;
+				color: white;
+			}
+			
+			a:hover {
+				color: grey;
+				text-decoration: none;
+			}
+			
+			.under_search {
+				text-align: center;
+				width: 100%;
+				margin: 0 auto;
+			}
+			
+			.wrap_box {
+				width: 800px;
+				height: 100px;
+				margin: 0 auto;
+				background-color: steelblue;
+				border-radius: 5px;
+				margin-top: 18px;
+				margin: center;
+			}
+			
+			.top_nav {
+				width: 750px;
+				height: 90px;
+				margin: 0 auto;
+			}
+			
+			ul {
+				list-style: none;
+			}
+			
+			.top_nav li div a {
+				float: left;
+			}
+			
+			.top_nav li {
+				height: 16px;
+				width: 100px;
+				/*margin: 0 auto;*/
+				float: left;
+				margin-top: 20px;
+				margin-left: 0px;
+				white-space: nowrap;
+				line-height: 16px;
+				align-content: center;
+			}
+			
+			.top_nav li div {
+				height: 16px;
+				font-size: 16px;
+				float: left;
+				margin-right: 0px;
+			}
+			
+			.top_nav img {
+				float: left;
+				margin-right: 5px;
+			}
+			
+			.big_advers {
+				width: 800px;
+				height: 500px;
+				/*background-color: #ADD8E6;*/
+				border-radius: 10px;
+				margin: 0 auto;
+				margin-top: 60px;
+			}
+			.left_advers{
+				width: 500px;
+				height: 500px;
+				float: left;
+				background-color: lightgray;
+				border-radius: 10px;
+			}
+			.right_advers{
+				width: 250px;
+				height: 500px;
+				float: right;
+				/*background-color: lightgray;*/
+				border-radius: 10px ;
+			}
+			.right_top{
+				height: 200px;
+				width : 250px;
+				background-color:white;
+				border-radius: 10px ;
+			}
+			.right_buttom{
+				height :280px;
+				width:250px;
+				margin-top:20px;
+				border-radius: 10px ;
+				background-color: white;
+			}
+			.img_row{
+				display:flex ;
+				/*height: 120px;*/
+			}
+			.img_row span img{
+				width:120px;
+			    height:80px;
+			    margin-left:4px;
+			}
+			.news_more{
+				/*vertical-align:middle;*/
+				text-align: center;
+				display: block;
+				line-height: 80px;
+				width:100px;
+				margin-left:6px;
+			}
+			.youlike{
+				border-bottom:1px solid floralwhite ;
+				width: 500px;
+				height: 150px;
+				
+			}
+			.under_img_text{
+				width: 500px;
+				height: 20px;
+				float: left;
+				margin-left: 5px;
+				margin-top: 3px;
+				
+			}
+			.right_top_ul{
+				margin: 0 auto;
+				width: 240px;
+				height: 200px;
+			}
+			.right_top ul{
+				
+			}
+			.right_top li img{
+				vertical-align: top;
+				margin-top: 3px;
+				width: 16px;
+				height: 16px;
+				margin-left: 10px;
+				/*text-align: center;*/
+			}
+			.right_top li{
+				/*margin: 0 auto;*/
+				width: 50px;
+				height: 50px;
+				/*text-align: center;*/
+				font-size: 18px;
+				float: left;
+				margin-top:18px;
+				margin-right:10px;
+				/*display: list-item;*/
+			}
+			.right_top p{
+				display: block;
+				float: left;
+			}
+			.right_ul{
+				width: 250px;
+				height: 20px;
+				margin: 0 auto;
+			}
+			.right_buttom li{
+				float: left;
+				width:40px;
+				height: 20px;
+			}
+			.right_buttom_img img{
+				width: 200px;
+				height: 120px;
+				margin-top: 20px;
+				
+			}
+			.right_buttom_img{
+				text-align: center;/*这本来是轮播图，以后再看这shift代码吧*/
+			}
+		</style>
+	</head>
+
+	<body>
+
+		<div class="top_line">
+			<div class="row" id="top">
+				<a href="#">返回旧版</a>
+				<a href="#">设置</a>
+				<a href="#">收藏</a>
+			</div>
+		</div>
+
+		<div class="out_search">
+			<div class="big-search">
+				<div class="search_inp">
+					<input class="search_input" type="text" />
+				</div>
+				<div class="search_sub">
+					<input class="search_submit" value="搜索" type="submit" />
+				</div>
+			</div>
+		</div>
+
+		<div class="under_search">
+			<a href="#">英语在线学习</a>
+			<a href="#">英语</a>
+			<a href="#">看天下</a>
+			<a href="#">变牛逼</a>
+			<a href="#">逼自己</a>
+			<a href="#">你好你好</a>
+			<a href="#">一定不要自爆</a>
+		</div>
+
+		<div class="wrap_box">
+			<div class="top_nav">
+				<ul>
+					<li><img src="img/t01d52e532b75546b90.png ">
+						<div>
+							<a href="#">百度</a>
+						</div>
+					</li>
+					<li><img src="img/t01d52e532b75546b90.png ">
+						<div>
+							<a href="# ">百度</a>
+						</div>
+					</li>
+					<li><img src="img/t01d52e532b75546b90.png ">
+						<div>
+							<a href="# ">百度</a>
+						</div>
+					</li>
+					<li><img src="img/t01d52e532b75546b90.png ">
+						<div>
+							<a href="# ">百度</a>
+						</div>
+					</li>
+					<li><img src="img/t01d52e532b75546b90.png ">
+						<div>
+							<a href="# ">百度</a>
+						</div>
+					</li>
+					<li><img src="img/t01d52e532b75546b90.png ">
+						<div>
+							<a href="# ">百度</a>
+						</div>
+					</li>
+					<li><img src="img/t01d52e532b75546b90.png ">
+						<div>
+							<a href="# ">百度</a>
+						</div>
+					</li>
+					<li><img src="img/t01d52e532b75546b90.png ">
+						<div>
+							<a href="# ">百度</a>
+						</div>
+					</li>
+					<li><img src="img/t01d52e532b75546b90.png ">
+						<div>
+							<a href="# ">百度</a>
+						</div>
+					</li>
+					<li><img src="img/t01d52e532b75546b90.png ">
+						<div>
+							<a href="# ">百度</a>
+						</div>
+					</li>
+					<li><img src="img/t01d52e532b75546b90.png ">
+						<div>
+							<a href="# ">百度</a>
+						</div>
+					</li>
+					<li><img src="img/t01d52e532b75546b90.png ">
+						<div>
+							<a href="# ">百度</a>
+						</div>
+					</li>
+					<li><img src="img/t01d52e532b75546b90.png ">
+						<div>
+							<a href="# ">百度</a>
+						</div>
+					</li>
+					<li><img src="img/t01d52e532b75546b90.png ">
+						<div>
+							<a href="# ">百度</a>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="big_advers">
+			<div class="left_advers">
+				
+				<div class="youlike">
+				<h3>论懂得养生的重要性</h3>
+				<div class="img_row">
+					<span><img src="img/733000-4f1b7288f7ee887fea3d4c1d69b1ce4d.gif" ></span>
+					<span><img src="img/733000-4f1b7288f7ee887fea3d4c1d69b1ce4d.gif"></span>
+					<span><img src="img/733000-4f1b7288f7ee887fea3d4c1d69b1ce4d.gif"></span>
+					<span><div class="news_more">查看详情</div></span>
+				</div>
+				<div class="under_img_text" ><span style="border: brown 1px solid">刚刚</span></div>
+			</div>
+			
+			<div class="youlike">
+				<h3>论懂得养生的重要性</h3>
+				<div class="img_row">
+					<span><img src="img/733000-4f1b7288f7ee887fea3d4c1d69b1ce4d.gif" ></span>
+					<span><img src="img/733000-4f1b7288f7ee887fea3d4c1d69b1ce4d.gif"></span>
+					<span><img src="img/733000-4f1b7288f7ee887fea3d4c1d69b1ce4d.gif"></span>
+					<span><div class="news_more">查看详情</div></span>
+				</div>
+				<div class="under_img_text" ><span style="border: brown 1px solid">刚刚</span></div>
+			</div>
+			
+			<div class="youlike">
+				<h3>论懂得养生的重要性</h3>
+				<div class="img_row">
+					<span><img src="img/733000-4f1b7288f7ee887fea3d4c1d69b1ce4d.gif" ></span>
+					<span><img src="img/733000-4f1b7288f7ee887fea3d4c1d69b1ce4d.gif"></span>
+					<span><img src="img/733000-4f1b7288f7ee887fea3d4c1d69b1ce4d.gif"></span>
+					<span><div class="news_more">查看详情</div></span>
+				</div>
+				<div class="under_img_text" ><span style="border: brown 1px solid">刚刚</span></div>
+			</div>
+			</div>
+			
+			<div class="right_advers">
+				<div class="right_top">
+					
+					<div class="right_top_ul">
+					<ul>
+                       <li><img src="img/t018adaf492800a9c0b.png"><p>电影</p></li>
+                       <li><img src="img/t018adaf492800a9c0b.png"><p>电影</p></li>
+                       <li><img src="img/t018adaf492800a9c0b.png"><p>电影</p></li>
+                       <li><img src="img/t018adaf492800a9c0b.png"><p>电影</p></li>
+                       <li><img src="img/t018adaf492800a9c0b.png"><p>电影</p></li>
+                       <li><img src="img/t018adaf492800a9c0b.png"><p>电影</p></li>
+                       <li><img src="img/t018adaf492800a9c0b.png"><p>电影</p></li>
+                       <li><img src="img/t018adaf492800a9c0b.png"><p>电影</p></li>
+					</ul>
+					</div>
+					
+				</div>
+				<div class="right_buttom">
+					<div class="right_ul">
+						<ul>
+							<li>新闻</li>
+							<li>娱乐</li>
+							<li>新闻</li>
+							<li>娱乐</li>
+							<li>新闻</li>
+						</ul>
+					</div>
+					<div class="right_buttom_img"><img src="img/t01d7ccd99ca9b9728a.jpg"></div>
+				</div>
+			</div>
+	    </div>
+			
+	</body>
+
+</html>
