@@ -34,3 +34,10 @@ text-align:center img在IE中可以对齐
   1. 次列表1
   2. 次列表2
 + 主列表3
+
+```
+![GitHub Logo](./Octocat.jpg "Octocat.jpg")  []中为alt内容
+效果如下
+```
+
+![GitHub Logo](./Octocat.jpg "Octocat.jpg")  
