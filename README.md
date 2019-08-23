@@ -4,7 +4,10 @@
 ### 首先要简单学习Markdown语法试试写readme
 
 
-```
-`这种符号叫做反单引号，在键盘数字1的左边，代码块以```开头，以```结尾
+```HTML
+`这种符号叫做反单引号，在键盘数字1的左边，代码块以``` html 开头表示用的HTML语言，以```结尾
+
+margin: 0 auto; 用在div等块级别元素，作用对象是选择器如div  p , but like img ,can not effect ,unless use <div><img></div>
+text-align:center img在IE中可以对齐
 
 ```
