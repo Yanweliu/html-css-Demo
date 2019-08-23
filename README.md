@@ -15,10 +15,25 @@ text-align:center img在IE中可以对齐
 
 ```
 行内连接
-[连接到百度]（https://www.baidu.com）
+[连接到百度]（https://www.baidu.com "百度"）
+
+参考链接
+[链接到百度][1]
+[链接到Google][2]  
+[还是链接到百度][1]
+
+[1]:https://www.baidu.com  
+[2]:https://www.google.com  
 效果如下
 ```
-[连接到百度]（https://www.baidu.com）
+[连接到百度]（https://www.baidu.com "百度"）
+
+[链接到百度][1]
+[链接到Google][2]  
+[还是链接到百度][1]
+
+[1]:https://www.baidu.com  
+[2]:https://www.google.com  
 
 ```
 列表
